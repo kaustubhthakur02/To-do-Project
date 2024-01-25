@@ -1,0 +1,43 @@
+
+body{
+   
+    background-image: url("../images/blue-calendar-3d-icon-date-schedule-isolated-pink-background-with-empty-time-reminder-plan-appointment-agenda-concept-white-paper-organizer-planner-calender-blank-timetable-meeting-page_79161-2648\ \(1\).avif");
+    background-position: cover;
+    background-position-x: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    
+ }
+ form{
+     margin-top: 136px;
+     height: fit-content;
+ }
+ 
+ .form{
+     padding: 0px;
+     margin-top: 22px;
+ }
+ 
+ .submit{
+     margin-top: 5px;
+     text-align: center;
+     
+ }
+ .tasks{
+     margin-bottom: 50px;
+     color: black;
+     text-align: center;
+ }
+ h2{
+     font-size: 100px;
+     font-family: 'Oleo Script Swash Caps', system-ui;
+}
+.tasks{
+    display: inline-flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}

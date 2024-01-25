@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/edit.css"%}">
+</head>
+<body style="background: linear-gradient(to right, rgb(236, 47, 18), rgb(118, 232, 223)); height: 100vh; margin: 0; display: flex; align-items: center; justify-content: center">
+    <form method="post" action="" style="text-align: center;">
+        <h2>Tasks</h2>
+        {% csrf_token %}
+        <table>
+            <tr>
+                <th>Sr.no</th>
+                <th>Priority</th>
+                <th>Date</th>
+                <th>Tasks</th>
+                <th>Edit Tasks</th>
+                <th>Delete Tasks</th>
+            </tr>
+            {% for i in tasks %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td class="{% if i.priority == 'High' %}high
+                {% elif i.priority == 'Medium' %}medium
+                {% else %}low
+                {% endif %}">{{i.priority}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.task}}</td>
+                <td><a href="/edit/{{i.id}}" style="color: rgb(95, 24, 0); text-decoration: none; ">Edit </a></td>
+                <td><a href="/delete/{{i.id}}" style="color: rgb(255, 81, 22); text-decoration: none; ">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </table><br>
+        <a href="{% url 'index1' %}" style="text-decoration: none; font-size: 25px; color: rgb(0, 0, 0); font-weight: bolder;">Enter Tasks</a>
+    </form>
+</body>
+</html>

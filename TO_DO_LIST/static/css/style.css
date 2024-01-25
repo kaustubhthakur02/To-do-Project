@@ -1,0 +1,38 @@
+
+body{
+      
+    background-image: url("../images/Untitled-1-fotor-bg-remover-20240118161812.png");
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center ;
+    text-align: center;
+    background-repeat: no-repeat;
+    
+   
+}
+form{
+    font-size: 20px;
+    margin-top: 148px;
+
+}
+
+.form{
+    padding: auto;
+    margin-top: 22px;
+}
+
+.submit {
+text-align: center;
+}
+.tasks{
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+h2{
+    
+    font-size: 100px;
+    font-family: 'Oleo Script Swash Caps', system-ui;
+}
+
+
